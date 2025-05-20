@@ -8,7 +8,7 @@ export default async function handler(req, res) {
   try {
     const response = await fetch(targetUrl, {
       headers: {
-        "Authorization": "Bearer 32628aa1-7239-4b8f-97cd-631cba2b8ce9", // Замените YOUR_API_KEY на ваш реальный ключ
+        "Authorization": "Bearer YOUR_API_KEY", // Замените YOUR_API_KEY на ваш реальный ключ
         "User-Agent": "Mozilla/5.0",
       },
     });
