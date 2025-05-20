@@ -8,6 +8,7 @@ export default async function handler(req, res) {
   try {
     const response = await fetch(targetUrl, {
       headers: {
+        "Authorization": "Bearer 32628aa1-7239-4b8f-97cd-631cba2b8ce9", // 👈 вставь свой токен
         "User-Agent": "Mozilla/5.0",
       },
     });
