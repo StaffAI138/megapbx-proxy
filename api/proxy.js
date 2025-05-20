@@ -6,7 +6,11 @@ export default async function handler(req, res) {
   }
 
   try {
-    const response = await fetch(targetUrl);
+    const response = await fetch(targetUrl, {
+      headers: {
+        "User-Agent": "Mozilla/5.0",
+      },
+    });
 
     if (!response.ok) {
       return res.status(response.status).json({
